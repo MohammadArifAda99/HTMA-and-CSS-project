@@ -179,8 +179,8 @@ where books.title=@bookTitle and library_branch.BranchName like @branchName;
 GO  
 
 
-EXECUTE BookByBranch N'Woman', N'Richmond';
-EXECUTE BookByBranch N'Woman', N'%';
+EXECUTE BookByBranch N'The power of postive', N'Mission';
+EXECUTE BookByBranch N'The power of postive', N'%';
 
 select * from book_loan;
 select * from borrower;
