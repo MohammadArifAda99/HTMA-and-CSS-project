@@ -10,7 +10,7 @@ BranchID int not null primary key identity (1,1),
 
 insert into library_branch values
 ( 'Kelowna', '3343'),
-('', 'Burnaby'),
+('Burnaby', '2132'),
 ( 'Richmond', '4354'),
 ('Coquitlam', '6765'),
 ('Mission','random');
@@ -68,14 +68,14 @@ references publisher(PublisherName),
 
 insert into books values
 ('The power of postive','Moises'),
-('Critical Thinkers','Brown'),
+('Critical of Thinkers','Brown'),
 ('Louse penny','Makinz'),
 ('Woman','Heel'),
 ('School','Moises'),
 ('Women and freedom','Brown'),
 ('Indogenous','Lisa'),
 ('Big boy','Kevin'),
-('Target','Mike'),
+('Tarra','Mike'),
 ('Rose','Logon'),
 ('Visit','Makinz')
 ('Big Dream','Arin'),
