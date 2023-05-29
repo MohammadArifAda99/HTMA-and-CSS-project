@@ -1,0 +1,70 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: powderblue;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        p {
+            color: black;
+        }
+
+        #container {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background: yellow;
+        }
+
+        #animate {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-center">
+        <h1 class="display-4">My Favorite Music</h1>
+        <p> I like Hazargi music and I think for everyone the songs and musicss of their own culture is the best.</p>
+        <p>you can have lest of my favorit musics here; <a href="https://youtu.be/IrLrLio4gQM">Aly Baya Ke Soghata Awardom </a>.</p>
+
+        <p><button onclick="myMove()">Click Me</button></p>
+
+        <div id="container">
+            <div id="animate"></div>
+        </div>
+
+    </div>
+</body>
+<script>
+    function myMove() {
+        let id = null;
+        const elem = document.getElementById("animate");
+        let pos = 0;
+        clearInterval(id);
+        id = setInterval(frame, 5);
+        function frame() {
+            if (pos == 350) {
+                clearInterval(id);
+            } else {
+                pos++;
+                elem.style.top = pos + "px";
+                elem.style.left = pos + "px";
+            }
+        }
+    }
+</script>
+
+</html>
